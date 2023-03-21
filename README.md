@@ -54,7 +54,11 @@ Since the Techno-Financial Model produces a profitability assessment of the sele
 ###### Figure 2: Inputs, Outputs, and Controls of the Techno-Financial model.
 
 ## 2. Installation
-<p align="justify">The HybridEnergyFarms toolkit runs within the MATLAB environment and consists of a Simulink model and MATLAB scripts. All the required files, except the MATLAB software and the relevant Add-Ons, can be downloaded through the WEBSITE(GitHub). Within these files, an example to run the model is already in place, and the relevant input files can be modified to run another case.</p>
+<p align="justify">The HybridEnergyFarms toolkit runs within the MATLAB environment and consists of a Simulink model and MATLAB scripts. All the required files, except the MATLAB software and the relevant Add-Ons, can be downloaded from the following link:
+
+[Link: HybridEnergyFarms](https://github.com/AndreasAsiikkis/HybridEnergyFarms)
+
+Within these files, an example to run the model is already in place, and the relevant input files can be modified to run another case.</p>
 
 <ins>Requirements</ins> 
 
@@ -122,14 +126,17 @@ The Power Model is versatile to any simulation period and simulation time step. 
 - Open the file "HybridIntegrationEemshaven.slx" located in the folder "PowerModel". Figure 3 shows the Power Analysis block which shows up. Double-click on this block to open it. Other Simulink blocks show up as indicated in Figure 4.
 
 <img width="445" alt="Figure1 1" src="https://user-images.githubusercontent.com/51987477/226574156-c5f8dd37-d795-4f99-b655-00616bba4869.PNG">
+
 ###### Figure 3: Power Analysis block in the file HybridIntegrationEemshaven.slx.
 
 <img width="830" alt="Figure1 2" src="https://user-images.githubusercontent.com/51987477/226574380-e4c4da51-dc18-4974-a2ba-d6413b2b832e.PNG">
+
 ###### Figure 4: Simulink blocks for the Power Model.
 
 - Double-click on Wave Power Input Data block to specify the related excel file for the power per buoy. Double-click on the Panels Input Data to specify the related excel files for the sun irradiation and the solar panel voltage. Double-click on the Production Modules block and then on the Wind Power Production block (see Figure 5) to specify the speed of the wind. Finally, double-click on the Ocean Battery block to specify the excel file related to the power demand.
 
 <img width="993" alt="Figure1 3" src="https://user-images.githubusercontent.com/51987477/226574564-5baa3240-6a2b-40ca-bf98-3806336e07f1.PNG">
+
 ###### Figure 5: Simulink blocks within the Production Modules block.
 
 - The Power Model is set-up. Click Run in the Simulation tab of Simulink to simulate the model.
@@ -140,11 +147,13 @@ The Power Model is versatile to any simulation period and simulation time step. 
 - A small window pops up as shown in Figure 6 asking for the number of windmills, solar arrays, WEC arrays, Batteries and hubs and the length of the grid. Specify the relevant values and click OK.
 
 ![image](https://user-images.githubusercontent.com/51987477/226574940-bfb83903-b630-451d-82c6-0f8eb7c5a98b.png)
+
 ###### Figure 6: Grid Characterization for the Cost Model.
 
 - Then, a figure shows up, as illustrated in Figure 7, where the placement of all the windmills, solar panels, buoys, ocean batteries and hubs need to be specified by clicking throughout the figure.
 
 ![image](https://user-images.githubusercontent.com/51987477/226575043-cd5755fc-89ea-4e75-ab9e-2e88d4d85410.png)
+
 ###### Figure 7: Specifying the placement of windmills, solar panels, buoys, ocean batteries and hubs.
 
 - When all the elements (i.e., windmills, solar panels etc.) are defined, the Cost Model runs automatically, and the results are presented through figures and the command window.
